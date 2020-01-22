@@ -154,33 +154,6 @@ document.getElementById('prsEcho').innerHTML = "<?= $prsEcho ?>"
 
 </script>
 
-<form method="post" action="#">
-
-  <input type="text" name="letters" />
-
-  <input type="submit" name="sentLetters" />
-
-</form>
-<?php
-
-if (isset($_POST['sentLetters'])) {
-
-  $lts = $_POST['letters'];
-  $letters = strlen($lts);
-
-  echo $letters;
-
-  echo strtolower($lts);
-
-
-
-}
-
-
-
-
-
-?>
 
 
 
